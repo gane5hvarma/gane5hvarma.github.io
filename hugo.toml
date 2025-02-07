@@ -2,3 +2,6 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'typo'
+[services]
+  [services.googleAnalytics]
+    ID = 'G-2V40CYBZ9D'
