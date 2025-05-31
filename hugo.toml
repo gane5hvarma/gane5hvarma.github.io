@@ -1,7 +1,91 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://gane5hvarma.github.io'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'R Ganesh Varma'
 theme = 'typo'
 [services]
   [services.googleAnalytics]
     ID = 'G-2V40CYBZ9D'
+
+[taxonomies]
+tag = 'tags'
+
+[params]
+# Home meta description
+description = "A tech-oriented personal blog curated by Ganesh Varma R."
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content in markdown
+homeIntroTitle = 'Welcome!'
+homeIntroContent = """
+Hi peeps, I'm Ganesh. Im a curious person and i spent most of my time playing, breaking, learning things to understand deeply. With this trait, I went on to become a software engineer.
+I Graduated from BITS Pilani Hyderabad(BPHC). BPHC had been a great experience for me in shaping my life.
+Im currently working as founding engineer with tensorfuse. Where we are building next generation serverless AI scalable infrastructure.
+My day to day work spans around these topics Distributed System, Containers, File system, Databases and AI. So i have started writing [posts](/posts) around these topics to share with you.
+"""
+
+homeIntroImage = "images/ganesh.jpeg"
+
+
+singleDateFormat = '2 Jan 2006'
+
+# Collection to display on home
+# homeCollectionTitle = 'Posts'
+# homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '02 Jan 2006'
+
+# Breadcrumbs
+breadcrumbs = true
+
+showFooter = false
+
+# Social icons
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/gane5hvarma/"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/gane5hvarma"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'bw'
+
+# Deploy settings
+
+[[deployment.matchers]]
+pattern = "^.+\\.(js|css|svg|ttf|woff2)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg|gif|webp)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = false
+
+[params.giscus]
+enable = false
+repo = "tomfran/blog"
+repoid = "R_kgDOLtSszw"
+category = "General"
+categoryid = "DIC_kwDOLtSsz84CfLm4"
+mapping = "pathname"
+theme = "preferred_color_scheme"

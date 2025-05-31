@@ -14,25 +14,27 @@
 <link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313//android-chrome-192x192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313//apple-touch-icon.png">
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/index.xml" title="R Ganesh Varma">
 <meta name="description" content=""/>
 
 
 
 <title>
     
-    Tags | R Ganesh Varma
+    Tokens: The Language of LLM&#39;s | R Ganesh Varma
     
 </title>
 
-<link rel="canonical" href="http://localhost:1313/tags/"/>
+<link rel="canonical" href="http://localhost:1313/posts/tokens/"/>
 
-<meta property="og:url" content="http://localhost:1313/tags/">
+<meta property="og:url" content="http://localhost:1313/posts/tokens/">
   <meta property="og:site_name" content="R Ganesh Varma">
-  <meta property="og:title" content="Tags">
-  <meta property="og:description" content="A tech-oriented personal blog curated by Ganesh Varma R.">
+  <meta property="og:title" content="Tokens: The Language of LLM&#39;s">
+  <meta property="og:description" content="LLM’s directly dont understand the human language well. It needs to be transfered to some form(token) for it to understand the language">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-01T21:41:13+05:30">
+    <meta property="article:modified_time" content="2025-03-01T21:41:13+05:30">
 
 
 
@@ -123,35 +125,115 @@
     <main class="main">
       
 
-<div class="list-container">
 
-    
+
+
+
 <div class="breadcrumbs">
     
     <a href="/">Home</a>
     <span class="breadcrumbs-separator"> > </span>
     
-    <a class="breadcrumbs-current" href="/tags/">Tags</a>
+    <a href="/posts/">Posts</a>
+    <span class="breadcrumbs-separator"> > </span>
+    
+    <a class="breadcrumbs-current" href="/posts/tokens/">Tokens: The Language of LLM&#39;s</a>
 </div>
 
 
-    <h1>Tags</h1>
+
+<div  class="autonumber" >
+
+  <div class="single-intro-container">
+
+    
+
+    <h1 class="single-title">Tokens: The Language of LLM&#39;s</h1>
+    
+    <p class="single-summary">LLM&rsquo;s directly dont understand the human language well. It needs to be transfered to some form(token) for it to understand the language</p>
     
 
     
 
-    
-    
-    
-    
+    <p class="single-readtime">
+      
+      
+      
+      <time datetime="2025-03-01T21:41:13&#43;05:30">1 Mar 2025</time>
+      
+
+      
+      &nbsp; · &nbsp;
+      1 min read
+      
+    </p>
+
+  </div>
+
+  
+
+  
+
+  
+  <aside class="toc">
+    <p><strong>Table of contents</strong></p>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-are-tokens">What are tokens?</a></li>
+    <li><a href="#tokenization">Tokenization</a></li>
+  </ul>
+</nav>
+  </aside>
+  
+
+  
+
+  <div class="single-content">
+    <h2 class="heading" id="what-are-tokens">
+  What are tokens?
+  <a class="anchor" href="#what-are-tokens">#</a>
+</h2>
+<p>The input text given to a LLM is broken down into tokens which have numerical representation that can easily be understood by LLM.
+Tokens are basically a collection of chars. The length of a token can range from a single char to couple of chars.
+for example the below sentence has <code>53</code> tokens and <code>252</code> characters</p>
+<pre tabindex="0"><code>Many words map to one token, but some don&#39;t: indivisible.
+
+Unicode characters like emojis may be split into many tokens containing the underlying bytes: 🤚🏾
+
+Sequences of characters commonly found next to each other may be grouped together: 1234567890
+</code></pre><p>you can try generating tokens form text using this <a href="https://platform.openai.com/tokenizer">site</a></p>
+<p>A helpful rule of thumb is that one token corresponds to 4 chars of english text.</p>
+<h2 class="heading" id="tokenization">
+  Tokenization
+  <a class="anchor" href="#tokenization">#</a>
+</h2>
+<p>The process of converting text to tokens is called tokenization.</p>
 
     
+  </div>
 
-    
+  
 
-    
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
 
 </div>
+
 
     </main>
   </div>
