@@ -9,6 +9,10 @@ theme = 'typo'
 [taxonomies]
 tag = 'tags'
 
+
+[params.breadcrumbs]
+  enabled = true
+  
 [params]
 # Home meta description
 description = "A tech-oriented personal blog curated by Ganesh Varma R."
@@ -41,8 +45,6 @@ paginationSize = 100
 listSummaries = true
 listDateFormat = '02 Jan 2006'
 
-# Breadcrumbs
-breadcrumbs = true
 
 showFooter = false
 
