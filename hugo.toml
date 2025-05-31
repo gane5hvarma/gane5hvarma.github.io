@@ -89,3 +89,7 @@ category = "General"
 categoryid = "DIC_kwDOLtSsz84CfLm4"
 mapping = "pathname"
 theme = "preferred_color_scheme"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
