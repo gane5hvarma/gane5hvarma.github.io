@@ -1,6 +1,6 @@
 +++
 date = '2025-03-01T21:41:13+05:30'
-draft = false
+draft = true
 title = "Tokens: The Language of LLM's"
 summary = "LLM's directly dont understand the human language well. It needs to be transfered to some form(token) for it to understand the language"
 toc = true
