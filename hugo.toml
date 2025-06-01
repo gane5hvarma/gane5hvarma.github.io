@@ -12,7 +12,7 @@ tag = 'tags'
 
 [params.breadcrumbs]
   enabled = true
-  
+
 [params]
 # Home meta description
 description = "A tech-oriented personal blog curated by Ganesh Varma R."
@@ -23,12 +23,15 @@ colorPalette = 'default'
 hideHeader = false
 
 # Intro on main page, content in markdown
-homeIntroTitle = 'Welcome!'
+homeIntroTitle = "Welcome, carbon-based life forms!"
 homeIntroContent = """
-Hi peeps, I'm Ganesh. Im a curious person and i spent most of my time playing, breaking, learning things to understand deeply. With this trait, I went on to become a software engineer.
-I Graduated from BITS Pilani Hyderabad(BPHC). BPHC had been a great experience for me in shaping my life.
-Im currently working as founding engineer with tensorfuse. Where we are building next generation serverless AI scalable infrastructure.
-My day to day work spans around these topics Distributed System, Containers, File system, Databases and AI. So i have started writing [posts](/posts) around these topics to share with you.
+Hi peeps, I’m Ganesh Varma. I have a deep love for exploring how things work. I spend most of my time playing, breaking, and learning to truly understand systems. That curiosity naturally led me to become a software engineer.
+
+I graduated from BITS Pilani Hyderabad (BPHC), which was a great experience and shaped my life in many ways.
+
+I'm currently working as a founding engineer at Tensorfuse, where we're building next-generation serverless AI infrastructure.
+
+My daily work revolves around Distributed Systems, Containers, Filesystems, Databases, and AI. I'm writing [posts](/posts) on these topics to share what I learn.
 """
 
 homeIntroImage = "images/ganesh.jpeg"
@@ -47,6 +50,7 @@ listDateFormat = '02 Jan 2006'
 
 
 showFooter = false
+
 
 # Social icons
 [[params.social]]
