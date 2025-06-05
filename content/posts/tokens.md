@@ -10,7 +10,7 @@ autonumber = true
 
 ## What Are Tokens?
 
-When you provide a prompt to an LLM, it doesn't process the raw text directly. Instead, it first breaks the input into smaller units called **tokens**. These tokens can be as short as a single character or as long as a commonly used word or phrase. Each token is then converted into a unique numerical ID. This is what the model actually understands and uses to generate responses.
+When you provide a prompt to an LLM, it doesn't process the raw text directly. Instead, it first breaks the prompt into smaller units called **tokens**. These tokens can be as short as a single character or as long as a commonly used word or phrase. Each token is then converted into a unique numerical ID. This is what the model actually understands and uses to generate responses.
 
 Understanding tokens is crucial because they're the fundamental currency of LLM interactions. Every character you type, every word you use, and every symbol you include gets converted into these numerical representations.
 
@@ -53,60 +53,46 @@ Different models use various tokenization strategies:
 These methods help models efficiently handle rare words, emojis, code, mathematical symbols, and text in multiple languages.
 
 ## Why Tokenization Matters
-
 Understanding tokenization helps you interact more effectively with LLMs in several key ways:
 
-### Token Limits and Context Windows
-Each LLM has a maximum token limit called a context window (e.g., GPT-4 Turbo supports 128k tokens, Claude models have varying limits). This includes both your prompt and the model's response. Knowing this helps you craft efficient prompts that maximize the available space for responses.
+* Token Limits: Each model has a context window (e.g., GPT-4 Turbo supports up to 128k tokens). This includes both your prompt and the model’s reply. Knowing this helps you manage prompt length wisely.
 
-### Cost Optimization
-Many API-based models charge based on the number of tokens processed. Understanding tokenization helps you write more concise prompts, directly reducing costs while maintaining effectiveness.
+* Cost: Most APIs charge by token usage. Writing concise prompts saves money without sacrificing clarity.
 
-### Response Quality
-Poorly structured prompts that don't respect token boundaries can lead to truncated responses or unexpected behavior. Well-tokenized inputs generally produce better outputs.
+* Quality: Cleanly tokenized prompts avoid truncation and improve output reliability.
 
-## Practical Examples
-
+### Practical Example
 Let's examine how tokenization works with a common sentence:
 
-**Input**: "The quick brown fox jumps over the lazy dog."
+Input: "The quick brown fox jumps over the lazy dog."
 
-**Tokenized version**:
+Tokenized version:
 ```
 ["The", " quick", " brown", " fox", " jumps", " over", " the", " lazy", " dog", "."]
 ```
-**Total**: 10 tokens
+Total: 10 tokens
 
 Notice how spaces are typically included with words (except at the beginning of sentences), and punctuation often becomes separate tokens. This helps the model understand context and proper spacing.
 
-## Thinking in Tokens: Best Practices
+### Thinking in Tokens:
+Adopting a token-first mindset helps you write better prompts:
 
-To optimize your LLM interactions, develop a "token mindset":
+* Be aware of token cost: Rare words, emojis, or long strings (like numbers) can use multiple tokens.
 
-### Be Aware of Token Density
-- Common words usually equal one token
-- Uncommon words may split into multiple tokens (e.g., "indivisible" might become ["ind", "ivis", "ible"])
-- Emojis, special characters, and symbols often require multiple tokens
-- Long numbers may be efficient or expensive depending on the tokenizer
+* Be concise: Avoid filler words. Use common, clear language.
 
-### Optimize for Efficiency
-- Write concise, clear prompts
-- Remove unnecessary words without losing meaning
-- Use common vocabulary when possible
-- Test complex prompts in tokenizer tools when needed
-
-### Plan for Context Limits
-- Longer prompts leave fewer tokens for responses
-- This is especially important for summarization or analysis tasks
-- Consider breaking very long inputs into smaller chunks
+* Watch context size: Long inputs reduce space for the model’s reply. Consider chunking large inputs when needed.
 
 ## Key Takeaways
+Tokens are how LLMs read and respond to our input. By thinking in tokens and not just words, you can:
 
-Tokens are the fundamental building blocks that allow LLMs to process and understand human language. While we think in words and sentences, models operate entirely at the token level. Mastering this concept helps you:
+* Improve prompt quality
 
-- Write more effective prompts
-- Manage context windows efficiently  
-- Reduce API costs
-- Achieve better model performance
+* Stay within context limits
 
-The next time you interact with an LLM, remember: think in tokens, not just words. Every character matters, and understanding how your text gets tokenized is the key to unlocking more powerful and efficient AI interactions.
+* Cut token processing costs
+
+* Get better results
+
+The more token-aware you are, the more powerful your interaction with LLMs becomes.
+
