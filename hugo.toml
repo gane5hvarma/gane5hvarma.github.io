@@ -25,13 +25,16 @@ hideHeader = false
 # Intro on main page, content in markdown
 homeIntroTitle = "Welcome, carbon-based life forms!"
 homeIntroContent = """
-Hi peeps, I’m Ganesh Varma. I have a deep love for exploring how things work. I spend most of my time playing, breaking, and learning to truly understand systems. That curiosity naturally led me to become a software engineer.
+Hi there! I'm Ganesh Varma, and I have a deep passion for understanding how things work under the hood. I spend most of my time exploring, experimenting, and breaking things apart to truly understand complex systems. This natural curiosity led me to pursue software engineering as my career.
 
-I graduated from BITS Pilani Hyderabad (BPHC), which was a great experience and shaped my life in many ways.
+I graduated from BITS Pilani, Hyderabad Campus (BPHC). An experience that deeply shaped how I think, solve problems, and approach challenges.
 
-I'm currently working as a founding engineer at Tensorfuse, where we're building next-generation serverless AI infrastructure.
+I'm currently working as a Senior Software Engineer at **DigitalOcean**, where I'm building distributed container registry. Previously, I've worked at:
+- **Tensorfuse** - Serverless GPU solutions on AWS
+- **RudderStack** - Customer data pipeline platform
+- **IDfy** - Integrated identity platform
 
-My daily work revolves around Distributed Systems, Containers, Filesystems, Databases, and AI. I'm writing [posts](/posts) on these topics to share what I learn.
+My daily work revolves around Distributed Systems, Container Technologies, File Systems, Database Systems, and AI. I've started writing [posts](/posts) about these topics, sharing insights and lessons learned from hands-on experience.
 """
 
 homeIntroImage = "images/ganesh.jpeg"
