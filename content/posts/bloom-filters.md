@@ -1,8 +1,8 @@
 +++
-date = '2025-06-14T05:30:00+05:30'
+date = '2025-07-05T05:30:00+05:30'
 draft = false
 title = "Bloom Filters: Fast, Probable and Powerful"
-summary = "Large scale systems like databases and blockchains often need to check whether a key exists without doing a full scan of the dataset. Bloom filters provide a fast, memory-efficient way to rule out non-existent keys with zero false negatives and a small chance of false postivies"
+summary = "Large scale systems like databases and blockchains often need to check whether a key exists without doing a full scan of the dataset. Bloom filters provide a fast, memory-efficient way to rule out non-existent keys with zero false negatives and a small chance of false positives."
 toc = true
 readTime = true
 autonumber = true
