@@ -90,7 +90,8 @@ func main() {
     // Check for existence
     fmt.Println(bloom.MightContain("apple"))  // true
     fmt.Println(bloom.MightContain("banana")) // true
-    fmt.Println(bloom.MightContain("cherry")) // false (might be false positive)
+    fmt.Println(bloom.MightContain("cherry")) // true (might be false positive)
+    fmt.Println(bloom.MightContain("grape"))  // false (definitely not present)
 }
 ```
 ## Constraints
